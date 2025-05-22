@@ -1,0 +1,73 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 33% 98%;
+    --foreground: 201 69% 22%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 201 69% 22%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 201 69% 22%;
+
+    --primary: 201 69% 22%;
+    --primary-foreground: 210 33% 98%;
+
+    --secondary: 203 54% 38%;
+    --secondary-foreground: 210 33% 98%;
+
+    --muted: 210 20% 90%;
+    --muted-foreground: 201 50% 40%;
+
+    --accent: 199 51% 44%;
+    --accent-foreground: 210 33% 98%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 33% 98%;
+
+    --border: 199 30% 85%;
+    --input: 199 30% 85%;
+    --ring: 199 51% 44%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-light text-primary;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold text-primary;
+  }
+
+  .page-container {
+    @apply max-w-7xl mx-auto p-4 sm:p-6 md:p-8 animate-fade-in;
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-lg hover:scale-[1.01];
+  }
+
+  .btn-primary {
+    @apply bg-primary text-white hover:bg-primary-dark transition-colors duration-300;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary text-white hover:bg-secondary-dark transition-colors duration-300;
+  }
+
+  .btn-accent {
+    @apply bg-accent text-white hover:bg-accent-dark transition-colors duration-300;
+  }
+}
