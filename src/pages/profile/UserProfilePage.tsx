@@ -141,12 +141,6 @@ const UserProfilePage = () => {
                   View Profile Details
                 </Button>
               </Link>
-
-              <Link to="/update-password">
-                <Button variant="outline" className="border-accent text-accent hover:bg-accent/10">
-                  Update Password
-                </Button>
-              </Link>
             </div>
 
             <Card className="w-full max-w-2xl shadow-md">
