@@ -17,11 +17,9 @@ const LoginPage = () => {
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
     
-    // Mock authentication for demo purposes
-    // In a real application, you would make an API call here
+    
     if (email && password) {
-      // Determine user type based on email for this demo
-      // In a real app, this would come from your authentication system
+     
       let userType;
       if (email.includes("admin")) {
         userType = "admin";
@@ -31,15 +29,13 @@ const LoginPage = () => {
         userType = "student";
       }
       
-      // Success toast notification
+      
       toast.success("Login successful! Redirecting...");
       
-      // Redirect based on user role
       setTimeout(() => {
         navigate(`/${userType}/dashboard`);
       }, 1000);
     } else {
-      // Error toast notification
       toast.error("Please enter both email and password");
     }
   };

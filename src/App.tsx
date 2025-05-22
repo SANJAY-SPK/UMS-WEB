@@ -58,6 +58,8 @@ const App = () => (
           <Route path="/login" element={<LoginPage />} />
           <Route path="/signup" element={<SignupPage />} />
           <Route path="/forgot-password" element={<ForgotPasswordPage />} />
+          <Route path="/changePassword" element={<UpdatePasswordPage />} />
+
           
           {/* Student Routes */}
           <Route path="/student/dashboard" element={<StudentDashboard />} />
@@ -90,7 +92,6 @@ const App = () => (
           
           {/* Shared Routes */}
           <Route path="/exams/timetable" element={<ExamTimetablePage />} />
-          <Route path="/update-password" element={<UpdatePasswordPage />} />
           
           {/* Catch-all route */}
           <Route path="*" element={<NotFound />} />
